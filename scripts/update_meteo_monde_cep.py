@@ -10,8 +10,8 @@ pour un simple point d'extraction ville par ville.
 
 Approximations assumées pour rester réalisable en un run quotidien léger :
 - Seuls 2t (température 2 m), tcc (nébulosité totale), tp (précipitations
-  cumulées) et sf (chutes de neige cumulées) sont téléchargés — pas les
-  diagnostics orage/CAPE/rafales du module France.
+  cumulées), sf (chutes de neige cumulées) et 10fg (rafales à 10 m) sont
+  téléchargés — pas les diagnostics orage/CAPE détaillés du module France.
 - Le décalage horaire local de chaque ville est approximé depuis sa
   longitude (round(lon / 15)), sans base de données de fuseaux — suffisant
   pour positionner matin/après-midi/soir/nuit à l'échéance IFS la plus
@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import math
 import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -54,8 +55,8 @@ CEP_STEP = 0.25
 
 PERIOD_HOURS = {"matin": 9, "apresmidi": 15, "soir": 19, "nuit": 1}
 NB_JOURS = 15
-IFS_PARAMETERS = ["2t", "tcc", "tp", "sf"]
-SHORT_NAME_FIELD = {"2t": "t2m", "tcc": "tcc", "tp": "tp", "sf": "sf"}
+IFS_PARAMETERS = ["2t", "tcc", "tp", "sf", "10fg"]
+SHORT_NAME_FIELD = {"2t": "t2m", "tcc": "tcc", "tp": "tp", "sf": "sf", "10fg": "gust", "fg10": "gust"}
 
 
 def grid_index(latitude: float, longitude: float) -> int:
@@ -118,6 +119,28 @@ def condition_code(cloud_pct: float, precip_mm: float, snow_mm: float) -> int:
     if cloud_pct < 80:
         return 2
     return 3
+
+
+def uv_index_estimate(latitude: float, local_date, hour: int, cloud_pct: float) -> int:
+    """Indice UV approximatif (pas de champ UV dans les données ouvertes
+    ECMWF) : élévation solaire depuis la date/heure locale et la latitude,
+    puis atténuation par la nébulosité. Ordre de grandeur seulement — pas
+    une prévision UV certifiée."""
+    day_of_year = local_date.timetuple().tm_yday
+    declination = math.radians(23.44) * math.sin(math.radians(360.0 / 365.0 * (day_of_year - 81)))
+    hour_angle = math.radians(15.0 * (hour - 12))
+    lat_rad = math.radians(latitude)
+    sin_elevation = (
+        math.sin(lat_rad) * math.sin(declination)
+        + math.cos(lat_rad) * math.cos(declination) * math.cos(hour_angle)
+    )
+    if sin_elevation <= 0:
+        return 0
+    clear_sky_uv = 12.0 * (sin_elevation ** 1.2)
+    cloud_fraction = cloud_pct / 100.0 if np.isfinite(cloud_pct) else 0.0
+    attenuation = 1.0 - 0.75 * cloud_fraction
+    uv = clear_sky_uv * max(attenuation, 0.15)
+    return max(0, int(round(uv)))
 
 
 def load_points(config_dir: Path) -> list[dict]:
@@ -186,6 +209,8 @@ def download_series(points: list[dict], forecast_hours: int) -> tuple[dict, dict
                             values = values * 100.0  # fraction -> %
                         elif field == "t2m":
                             values = values - 273.15  # K -> °C
+                        elif field == "gust":
+                            values = values * 3.6  # m/s -> km/h
                         series[field][lead] = values
                     finally:
                         codes_release(gid)
@@ -223,6 +248,7 @@ def build_forecast_for_point(
             cloud = series["tcc"].get(lead)
             precip = series["tp"].get(lead)
             snow = series["sf"].get(lead)
+            gust = series["gust"].get(lead)
             if temp is None:
                 continue
 
@@ -230,10 +256,14 @@ def build_forecast_for_point(
             cloud_value = cloud[position] if cloud is not None else float("nan")
             precip_value = precip[position] if precip is not None else float("nan")
             snow_value = snow[position] if snow is not None else float("nan")
+            gust_value = gust[position] if gust is not None else float("nan")
+            uv_value = uv_index_estimate(point["lat"], local_date, hour, cloud_value)
 
             forecast[str(day)][period] = {
                 "t": int(round(t_value)) if np.isfinite(t_value) else None,
                 "code": condition_code(cloud_value, precip_value, snow_value),
+                "rafales": int(round(gust_value)) if np.isfinite(gust_value) else None,
+                "uv": uv_value,
             }
     return forecast
 
