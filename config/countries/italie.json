@@ -1,0 +1,33 @@
+{
+  "nom": "Italie",
+  "slug": "italie",
+  "bbox": [36.6, 6.6, 47.1, 18.6],
+  "villes": [
+    { "nom": "Milan",    "slug": "milan",    "lat": 45.464, "lon": 9.190 },
+    { "nom": "Venise",   "slug": "venise",   "lat": 45.440, "lon": 12.316 },
+    { "nom": "Turin",    "slug": "turin",    "lat": 45.070, "lon": 7.687 },
+    { "nom": "Bologne",  "slug": "bologne",  "lat": 44.494, "lon": 11.343 },
+    { "nom": "Florence", "slug": "florence", "lat": 43.769, "lon": 11.256 },
+    { "nom": "Pise",     "slug": "pise",     "lat": 43.716, "lon": 10.400 },
+    { "nom": "Rome",     "slug": "rome",     "lat": 41.903, "lon": 12.496 },
+    { "nom": "Naples",   "slug": "naples",   "lat": 40.852, "lon": 14.268 },
+    { "nom": "Bari",     "slug": "bari",     "lat": 41.118, "lon": 16.872 },
+    { "nom": "Palerme",  "slug": "palerme",  "lat": 38.116, "lon": 13.361 },
+    { "nom": "Catane",   "slug": "catane",   "lat": 37.502, "lon": 15.087 },
+    { "nom": "Cagliari", "slug": "cagliari", "lat": 39.223, "lon": 9.122 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 8,  "pluie": 66, "t_mer": 14, "avis": 1 },
+    { "mois": "Fév.",  "t_moy": 9,  "pluie": 61, "t_mer": 13, "avis": 1 },
+    { "mois": "Mars",  "t_moy": 12, "pluie": 57, "t_mer": 14, "avis": 2 },
+    { "mois": "Avril", "t_moy": 15, "pluie": 61, "t_mer": 15, "avis": 3 },
+    { "mois": "Mai",   "t_moy": 19, "pluie": 51, "t_mer": 18, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 23, "pluie": 42, "t_mer": 22, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 26, "pluie": 27, "t_mer": 25, "avis": 3 },
+    { "mois": "Août",  "t_moy": 26, "pluie": 39, "t_mer": 25, "avis": 3 },
+    { "mois": "Sept.", "t_moy": 22, "pluie": 68, "t_mer": 23, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 17, "pluie": 91, "t_mer": 20, "avis": 3 },
+    { "mois": "Nov.",  "t_moy": 12, "pluie": 90, "t_mer": 17, "avis": 1 },
+    { "mois": "Déc.",  "t_moy": 9,  "pluie": 76, "t_mer": 15, "avis": 1 }
+  ]
+}
