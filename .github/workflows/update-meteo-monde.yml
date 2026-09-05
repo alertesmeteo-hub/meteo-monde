@@ -1,0 +1,55 @@
+name: Mise à jour Météo Monde
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Midi en France : 12 h 00 en heure d'été (10 h UTC), 12 h 00 en heure
+    # d'hiver (11 h UTC). On déclenche à 11 h UTC pour rester proche de
+    # midi toute l'année sans dépendre du changement d'heure.
+    - cron: "0 11 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-meteo-monde
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v7
+
+      - name: Installer Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Produire les prévisions par pays
+        run: python scripts/update_meteo_monde.py --config-dir config/countries --output-dir build/data
+
+      - name: Vérifier la publication
+        run: |
+          test -f build/data/index.json
+          python -c "import json; d=json.load(open('build/data/index.json')); assert d['countries']"
+
+      - name: Publier la branche data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          publish_dir="$(mktemp -d)"
+          cp -a build/data/. "$publish_dir/"
+          touch "$publish_dir/.nojekyll"
+          cd "$publish_dir"
+          git init -b data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Données Météo Monde $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPOSITORY}.git"
+          git push --force origin data
