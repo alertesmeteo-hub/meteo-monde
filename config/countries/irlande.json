@@ -1,0 +1,30 @@
+{
+  "nom": "Irlande",
+  "slug": "irlande",
+  "bbox": [51.3, -10.7, 55.4, -5.9],
+  "villes": [
+    { "nom": "Belfast",   "slug": "belfast",   "lat": 54.597, "lon": -5.930 },
+    { "nom": "Sligo",     "slug": "sligo",     "lat": 54.276, "lon": -8.475 },
+    { "nom": "Dublin",    "slug": "dublin",    "lat": 53.349, "lon": -6.260 },
+    { "nom": "Athlone",   "slug": "athlone",   "lat": 53.423, "lon": -7.940 },
+    { "nom": "Galway",    "slug": "galway",    "lat": 53.271, "lon": -9.056 },
+    { "nom": "Limerick",  "slug": "limerick",  "lat": 52.664, "lon": -8.623 },
+    { "nom": "Waterford", "slug": "waterford", "lat": 52.259, "lon": -7.110 },
+    { "nom": "Cork",      "slug": "cork",      "lat": 51.898, "lon": -8.475 },
+    { "nom": "Killarney", "slug": "killarney", "lat": 52.059, "lon": -9.507 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 6,  "pluie": 111, "t_mer": 10, "avis": 1 },
+    { "mois": "Fév.",  "t_moy": 6,  "pluie": 83,  "t_mer": 10, "avis": 1 },
+    { "mois": "Mars",  "t_moy": 7,  "pluie": 83,  "t_mer": 10, "avis": 2 },
+    { "mois": "Avril", "t_moy": 9,  "pluie": 71,  "t_mer": 11, "avis": 2 },
+    { "mois": "Mai",   "t_moy": 12, "pluie": 73,  "t_mer": 13, "avis": 3 },
+    { "mois": "Juin",  "t_moy": 14, "pluie": 74,  "t_mer": 16, "avis": 3 },
+    { "mois": "Juil.", "t_moy": 16, "pluie": 73,  "t_mer": 18, "avis": 3 },
+    { "mois": "Août",  "t_moy": 15, "pluie": 89,  "t_mer": 18, "avis": 3 },
+    { "mois": "Sept.", "t_moy": 14, "pluie": 86,  "t_mer": 18, "avis": 3 },
+    { "mois": "Oct.",  "t_moy": 11, "pluie": 116, "t_mer": 16, "avis": 2 },
+    { "mois": "Nov.",  "t_moy": 8,  "pluie": 111, "t_mer": 14, "avis": 1 },
+    { "mois": "Déc.",  "t_moy": 6,  "pluie": 114, "t_mer": 12, "avis": 1 }
+  ]
+}

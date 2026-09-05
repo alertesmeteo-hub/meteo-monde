@@ -1,0 +1,2 @@
+# Le script update_meteo_monde.py n'utilise que la bibliothèque standard
+# (urllib, json) — aucune dépendance externe requise.
