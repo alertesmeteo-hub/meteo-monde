@@ -2,7 +2,7 @@
   "nom": "Espagne",
   "slug": "espagne",
   "utc_offset_hours": 2,
-  "bbox": [27.5, -18.5, 43.8, 4.4],
+  "bbox": [36.0, -9.5, 43.8, 4.4],
   "villes": [
     { "nom": "Alicante",   "slug": "alicante",   "lat": 38.3452, "lon": -0.4810 },
     { "nom": "Barcelone",  "slug": "barcelone",  "lat": 41.3851, "lon": 2.1734 },
@@ -21,7 +21,6 @@
     { "nom": "Palma de Majorque", "slug": "palma-de-majorque", "lat": 39.5696, "lon": 2.6502 },
     { "nom": "Saint-Jacques-de-Compostelle", "slug": "saint-jacques-de-compostelle", "lat": 42.8782, "lon": -8.5448 },
     { "nom": "Salamanque", "slug": "salamanque", "lat": 40.9701, "lon": -5.6635 },
-    { "nom": "Santa Cruz de Ténérife", "slug": "santa-cruz-de-tenerife", "lat": 28.4636, "lon": -16.2518 },
     { "nom": "Santander",  "slug": "santander",  "lat": 43.4623, "lon": -3.8099 },
     { "nom": "Saragosse",  "slug": "saragosse",  "lat": 41.6488, "lon": -0.8891 },
     { "nom": "Séville",    "slug": "seville",    "lat": 37.3891, "lon": -5.9845 },
