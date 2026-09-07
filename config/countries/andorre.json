@@ -1,0 +1,30 @@
+{
+  "nom": "Andorre",
+  "slug": "andorre",
+  "utc_offset_hours": 2,
+  "bbox": [42.42, 1.40, 42.68, 1.79],
+  "villes": [
+    { "nom": "Andorre-la-Vieille", "slug": "andorre-la-vieille", "lat": 42.5063, "lon": 1.5218 },
+    { "nom": "Escaldes-Engordany", "slug": "escaldes-engordany", "lat": 42.5089, "lon": 1.5347 },
+    { "nom": "Encamp",             "slug": "encamp",             "lat": 42.5359, "lon": 1.5828 },
+    { "nom": "La Massana",         "slug": "la-massana",         "lat": 42.5455, "lon": 1.5147 },
+    { "nom": "Ordino",             "slug": "ordino",             "lat": 42.5563, "lon": 1.5330 },
+    { "nom": "Sant Julià de Lòria","slug": "sant-julia-de-loria","lat": 42.4639, "lon": 1.4914 },
+    { "nom": "Canillo",            "slug": "canillo",            "lat": 42.5675, "lon": 1.5975 },
+    { "nom": "Pas de la Case",     "slug": "pas-de-la-case",     "lat": 42.5428, "lon": 1.7325 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": -1, "pluie": 45, "avis": 4 },
+    { "mois": "Fév.",  "t_moy": 0,  "pluie": 45, "avis": 4 },
+    { "mois": "Mars",  "t_moy": 3,  "pluie": 55, "avis": 3 },
+    { "mois": "Avril", "t_moy": 6,  "pluie": 70, "avis": 2 },
+    { "mois": "Mai",   "t_moy": 10, "pluie": 90, "avis": 3 },
+    { "mois": "Juin",  "t_moy": 14, "pluie": 80, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 17, "pluie": 65, "avis": 5 },
+    { "mois": "Août",  "t_moy": 17, "pluie": 75, "avis": 5 },
+    { "mois": "Sept.", "t_moy": 14, "pluie": 65, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 9,  "pluie": 60, "avis": 3 },
+    { "mois": "Nov.",  "t_moy": 4,  "pluie": 55, "avis": 2 },
+    { "mois": "Déc.",  "t_moy": 0,  "pluie": 50, "avis": 4 }
+  ]
+}
