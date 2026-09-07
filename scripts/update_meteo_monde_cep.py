@@ -293,11 +293,14 @@ def main() -> int:
     series, valid_times, run_hint = download_series(points, args.forecast_hours)
 
     by_country: dict[str, dict] = {}
+    country_offset: dict[str, int] = {}
     for point in points:
         forecast = build_forecast_for_point(point, series, valid_times)
         by_country.setdefault(point["country_slug"], {})[point["city_slug"]] = forecast
+        country_offset.setdefault(point["country_slug"], utc_offset_hours(point["lon"]))
 
-    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    build_time_utc = datetime.now(timezone.utc)
+    generated_at = build_time_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
     slugs = []
     for config_path in sorted(config_dir.glob("*.json")):
         cfg = json.loads(config_path.read_text(encoding="utf-8"))
@@ -315,6 +318,16 @@ def main() -> int:
                 for period, value in periods.items():
                     merged_forecast[day][period][city_slug] = value
 
+        # Le "jour 0" ci-dessus correspond à la date locale au moment de la
+        # génération (une fois par jour, vers midi) — pas forcément au jour
+        # réel du visiteur si la page est consultée le lendemain avant la
+        # prochaine publication. On expose la date calendaire réelle de
+        # chaque index pour que le widget WordPress puisse recaler
+        # "aujourd'hui" sur la vraie date plutôt que sur l'index 0.
+        offset = country_offset.get(slug, 1)
+        base_date = (build_time_utc + timedelta(hours=offset)).date()
+        day_dates = {str(day): (base_date + timedelta(days=day)).isoformat() for day in range(NB_JOURS)}
+
         output = {
             "nom": cfg["nom"],
             "slug": slug,
@@ -324,6 +337,7 @@ def main() -> int:
             "generated_at": generated_at,
             "model_run": run_hint.isoformat(),
             "source": "cep-ecmwf-ifs-0p25",
+            "day_dates": day_dates,
             "forecast": merged_forecast,
         }
         (countries_out / f"{slug}.json").write_text(
