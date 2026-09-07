@@ -23,7 +23,13 @@
     { "nom": "Naas",               "slug": "naas",               "lat": 53.219, "lon": -6.662 },
     { "nom": "Roscommon",          "slug": "roscommon",          "lat": 53.628, "lon": -8.190 },
     { "nom": "Waterford",          "slug": "waterford",          "lat": 52.259, "lon": -7.110 },
-    { "nom": "Wicklow",            "slug": "wicklow",            "lat": 52.980, "lon": -6.045 }
+    { "nom": "Wicklow",            "slug": "wicklow",            "lat": 52.980, "lon": -6.045 },
+    { "nom": "Kinsale",            "slug": "kinsale",            "lat": 51.707, "lon": -8.531 },
+    { "nom": "Westport",           "slug": "westport",           "lat": 53.800, "lon": -9.519 },
+    { "nom": "Doolin",             "slug": "doolin",             "lat": 53.017, "lon": -9.393 },
+    { "nom": "Adare",              "slug": "adare",              "lat": 52.562, "lon": -8.790 },
+    { "nom": "Cobh",               "slug": "cobh",               "lat": 51.851, "lon": -8.294 },
+    { "nom": "Kenmare",            "slug": "kenmare",            "lat": 51.879, "lon": -9.583 }
   ],
   "meilleurs_mois": [
     { "mois": "Jan.",  "t_moy": 6,  "pluie": 111, "t_mer": 10, "avis": 1 },

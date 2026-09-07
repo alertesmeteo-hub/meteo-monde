@@ -21,7 +21,15 @@
     { "nom": "Messine",   "slug": "messine",   "lat": 38.194, "lon": 15.552 },
     { "nom": "Catane",    "slug": "catane",    "lat": 37.502, "lon": 15.087 },
     { "nom": "Cagliari",  "slug": "cagliari",  "lat": 39.223, "lon": 9.122 },
-    { "nom": "Sassari",   "slug": "sassari",   "lat": 40.727, "lon": 8.559 }
+    { "nom": "Sassari",   "slug": "sassari",   "lat": 40.727, "lon": 8.559 },
+    { "nom": "Trieste",   "slug": "trieste",   "lat": 45.649, "lon": 13.777 },
+    { "nom": "Ancône",    "slug": "ancone",    "lat": 43.616, "lon": 13.517 },
+    { "nom": "Sienne",    "slug": "sienne",    "lat": 43.318, "lon": 11.331 },
+    { "nom": "Assise",    "slug": "assise",    "lat": 43.071, "lon": 12.619 },
+    { "nom": "Matera",    "slug": "matera",    "lat": 40.667, "lon": 16.604 },
+    { "nom": "Lecce",     "slug": "lecce",     "lat": 40.352, "lon": 18.169 },
+    { "nom": "Taormine",  "slug": "taormine",  "lat": 37.852, "lon": 15.289 },
+    { "nom": "Alghero",   "slug": "alghero",   "lat": 40.558, "lon": 8.319 }
   ],
   "meilleurs_mois": [
     { "mois": "Jan.",  "t_moy": 8,  "pluie": 66, "t_mer": 14, "avis": 1 },
