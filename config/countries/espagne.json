@@ -1,0 +1,32 @@
+{
+  "nom": "Espagne",
+  "slug": "espagne",
+  "utc_offset_hours": 2,
+  "bbox": [36.0, -9.5, 43.8, 3.4],
+  "villes": [
+    { "nom": "Madrid",  "slug": "madrid",  "lat": 40.4168, "lon": -3.7038 },
+    { "nom": "Barcelone", "slug": "barcelone", "lat": 41.3851, "lon": 2.1734 },
+    { "nom": "Séville", "slug": "seville", "lat": 37.3891, "lon": -5.9845 },
+    { "nom": "Valence", "slug": "valence-espagne", "lat": 39.4699, "lon": -0.3763 },
+    { "nom": "Grenade", "slug": "grenade", "lat": 37.1773, "lon": -3.5986 },
+    { "nom": "Malaga",  "slug": "malaga",  "lat": 36.7213, "lon": -4.4214 },
+    { "nom": "Bilbao",  "slug": "bilbao",  "lat": 43.2630, "lon": -2.9350 },
+    { "nom": "Saint-Jacques-de-Compostelle", "slug": "saint-jacques-de-compostelle", "lat": 42.8782, "lon": -8.5448 },
+    { "nom": "Cordoue", "slug": "cordoue", "lat": 37.8882, "lon": -4.7794 },
+    { "nom": "Tolède",  "slug": "tolede",  "lat": 39.8628, "lon": -4.0273 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 10, "pluie": 45, "t_mer": 15, "avis": 2 },
+    { "mois": "Fév.",  "t_moy": 12, "pluie": 40, "t_mer": 15, "avis": 2 },
+    { "mois": "Mars",  "t_moy": 15, "pluie": 35, "t_mer": 16, "avis": 3 },
+    { "mois": "Avril", "t_moy": 17, "pluie": 45, "t_mer": 17, "avis": 3 },
+    { "mois": "Mai",   "t_moy": 21, "pluie": 40, "t_mer": 19, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 26, "pluie": 20, "t_mer": 22, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 30, "pluie": 10, "t_mer": 24, "avis": 3 },
+    { "mois": "Août",  "t_moy": 30, "pluie": 15, "t_mer": 25, "avis": 3 },
+    { "mois": "Sept.", "t_moy": 26, "pluie": 30, "t_mer": 23, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 20, "pluie": 55, "t_mer": 21, "avis": 4 },
+    { "mois": "Nov.",  "t_moy": 14, "pluie": 55, "t_mer": 18, "avis": 2 },
+    { "mois": "Déc.",  "t_moy": 11, "pluie": 50, "t_mer": 16, "avis": 2 }
+  ]
+}

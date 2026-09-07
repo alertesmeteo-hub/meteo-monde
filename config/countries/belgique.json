@@ -1,0 +1,30 @@
+{
+  "nom": "Belgique",
+  "slug": "belgique",
+  "utc_offset_hours": 2,
+  "bbox": [49.4, 2.5, 51.6, 6.4],
+  "villes": [
+    { "nom": "Bruxelles", "slug": "bruxelles", "lat": 50.8503, "lon": 4.3517 },
+    { "nom": "Bruges",    "slug": "bruges",    "lat": 51.2093, "lon": 3.2247 },
+    { "nom": "Anvers",    "slug": "anvers",    "lat": 51.2194, "lon": 4.4025 },
+    { "nom": "Gand",      "slug": "gand",      "lat": 51.0543, "lon": 3.7174 },
+    { "nom": "Liège",     "slug": "liege",     "lat": 50.6326, "lon": 5.5797 },
+    { "nom": "Louvain",   "slug": "louvain",   "lat": 50.8798, "lon": 4.7005 },
+    { "nom": "Namur",     "slug": "namur",     "lat": 50.4674, "lon": 4.8720 },
+    { "nom": "Ypres",     "slug": "ypres",     "lat": 50.8500, "lon": 2.8850 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 4,  "pluie": 80, "avis": 1 },
+    { "mois": "Fév.",  "t_moy": 4,  "pluie": 60, "avis": 1 },
+    { "mois": "Mars",  "t_moy": 7,  "pluie": 60, "avis": 2 },
+    { "mois": "Avril", "t_moy": 10, "pluie": 50, "avis": 3 },
+    { "mois": "Mai",   "t_moy": 14, "pluie": 60, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 17, "pluie": 70, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 19, "pluie": 75, "avis": 4 },
+    { "mois": "Août",  "t_moy": 19, "pluie": 80, "avis": 4 },
+    { "mois": "Sept.", "t_moy": 16, "pluie": 65, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 12, "pluie": 75, "avis": 2 },
+    { "mois": "Nov.",  "t_moy": 7,  "pluie": 80, "avis": 1 },
+    { "mois": "Déc.",  "t_moy": 5,  "pluie": 85, "avis": 1 }
+  ]
+}
