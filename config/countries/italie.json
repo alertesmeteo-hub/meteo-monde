@@ -1,6 +1,7 @@
 {
   "nom": "Italie",
   "slug": "italie",
+  "utc_offset_hours": 2,
   "bbox": [36.6, 6.6, 47.1, 18.6],
   "villes": [
     { "nom": "Milan",     "slug": "milan",     "lat": 45.464, "lon": 9.190 },

@@ -1,6 +1,7 @@
 {
   "nom": "Irlande",
   "slug": "irlande",
+  "utc_offset_hours": 1,
   "bbox": [51.3, -10.7, 55.4, -5.9],
   "villes": [
     { "nom": "Belfast",    "slug": "belfast",    "lat": 54.597, "lon": -5.930 },

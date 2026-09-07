@@ -147,12 +147,18 @@ def load_points(config_dir: Path) -> list[dict]:
     points = []
     for path in sorted(config_dir.glob("*.json")):
         cfg = json.loads(path.read_text(encoding="utf-8"))
+        country_offset = cfg.get("utc_offset_hours")
         for ville in cfg["villes"]:
+            lon = float(ville["lon"])
             points.append({
                 "country_slug": cfg["slug"],
                 "city_slug": ville["slug"],
                 "lat": float(ville["lat"]),
-                "lon": float(ville["lon"]),
+                "lon": lon,
+                # Le décalage par longitude (round(lon/15)) ignore l'heure
+                # d'été : privilégier un décalage explicite par pays quand
+                # le config le fournit (voir config/countries/*.json).
+                "utc_offset": country_offset if country_offset is not None else utc_offset_hours(lon),
             })
     return points
 
@@ -228,7 +234,7 @@ def build_forecast_for_point(
     series: dict[str, dict[int, np.ndarray]],
     valid_times: dict[int, datetime],
 ) -> dict[str, dict[str, dict]]:
-    offset = utc_offset_hours(point["lon"])
+    offset = point.get("utc_offset", utc_offset_hours(point["lon"]))
     now_utc = datetime.now(timezone.utc)
     local_now_date = (now_utc + timedelta(hours=offset)).date()
     position = point["position"]
@@ -297,7 +303,7 @@ def main() -> int:
     for point in points:
         forecast = build_forecast_for_point(point, series, valid_times)
         by_country.setdefault(point["country_slug"], {})[point["city_slug"]] = forecast
-        country_offset.setdefault(point["country_slug"], utc_offset_hours(point["lon"]))
+        country_offset.setdefault(point["country_slug"], point.get("utc_offset", utc_offset_hours(point["lon"])))
 
     build_time_utc = datetime.now(timezone.utc)
     generated_at = build_time_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
