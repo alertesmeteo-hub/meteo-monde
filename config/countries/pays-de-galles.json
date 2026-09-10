@@ -1,0 +1,111 @@
+{
+  "nom": "Pays de Galles",
+  "slug": "pays-de-galles",
+  "utc_offset_hours": 1,
+  "bbox": [
+    51.0,
+    -3.8,
+    52.1,
+    -2.4
+  ],
+  "villes": [
+    {
+      "nom": "Cardiff",
+      "slug": "cardiff",
+      "lat": 51.4816,
+      "lon": -3.1791
+    },
+    {
+      "nom": "Newport",
+      "slug": "newport",
+      "lat": 51.5842,
+      "lon": -2.9977
+    }
+  ],
+  "meilleurs_mois": [
+    {
+      "mois": "Jan.",
+      "t_moy": 6,
+      "pluie": 135,
+      "t_mer": 9,
+      "avis": 1
+    },
+    {
+      "mois": "Fév.",
+      "t_moy": 6,
+      "pluie": 100,
+      "t_mer": 9,
+      "avis": 1
+    },
+    {
+      "mois": "Mars",
+      "t_moy": 8,
+      "pluie": 95,
+      "t_mer": 9,
+      "avis": 2
+    },
+    {
+      "mois": "Avril",
+      "t_moy": 10,
+      "pluie": 80,
+      "t_mer": 10,
+      "avis": 2
+    },
+    {
+      "mois": "Mai",
+      "t_moy": 13,
+      "pluie": 85,
+      "t_mer": 12,
+      "avis": 3
+    },
+    {
+      "mois": "Juin",
+      "t_moy": 15,
+      "pluie": 90,
+      "t_mer": 14,
+      "avis": 3
+    },
+    {
+      "mois": "Juil.",
+      "t_moy": 17,
+      "pluie": 90,
+      "t_mer": 16,
+      "avis": 3
+    },
+    {
+      "mois": "Août",
+      "t_moy": 17,
+      "pluie": 100,
+      "t_mer": 17,
+      "avis": 3
+    },
+    {
+      "mois": "Sept.",
+      "t_moy": 15,
+      "pluie": 110,
+      "t_mer": 16,
+      "avis": 3
+    },
+    {
+      "mois": "Oct.",
+      "t_moy": 12,
+      "pluie": 140,
+      "t_mer": 14,
+      "avis": 2
+    },
+    {
+      "mois": "Nov.",
+      "t_moy": 9,
+      "pluie": 140,
+      "t_mer": 12,
+      "avis": 1
+    },
+    {
+      "mois": "Déc.",
+      "t_moy": 7,
+      "pluie": 140,
+      "t_mer": 10,
+      "avis": 1
+    }
+  ]
+}

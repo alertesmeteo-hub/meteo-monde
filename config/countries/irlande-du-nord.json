@@ -1,0 +1,105 @@
+{
+  "nom": "Irlande du Nord",
+  "slug": "irlande-du-nord",
+  "utc_offset_hours": 1,
+  "bbox": [
+    54.2,
+    -6.5,
+    54.9,
+    -5.3
+  ],
+  "villes": [
+    {
+      "nom": "Belfast",
+      "slug": "belfast",
+      "lat": 54.5973,
+      "lon": -5.9301
+    }
+  ],
+  "meilleurs_mois": [
+    {
+      "mois": "Jan.",
+      "t_moy": 5,
+      "pluie": 85,
+      "t_mer": 9,
+      "avis": 1
+    },
+    {
+      "mois": "Fév.",
+      "t_moy": 5,
+      "pluie": 60,
+      "t_mer": 9,
+      "avis": 1
+    },
+    {
+      "mois": "Mars",
+      "t_moy": 7,
+      "pluie": 65,
+      "t_mer": 9,
+      "avis": 2
+    },
+    {
+      "mois": "Avril",
+      "t_moy": 9,
+      "pluie": 55,
+      "t_mer": 10,
+      "avis": 2
+    },
+    {
+      "mois": "Mai",
+      "t_moy": 12,
+      "pluie": 60,
+      "t_mer": 12,
+      "avis": 3
+    },
+    {
+      "mois": "Juin",
+      "t_moy": 14,
+      "pluie": 65,
+      "t_mer": 14,
+      "avis": 3
+    },
+    {
+      "mois": "Juil.",
+      "t_moy": 16,
+      "pluie": 70,
+      "t_mer": 16,
+      "avis": 3
+    },
+    {
+      "mois": "Août",
+      "t_moy": 16,
+      "pluie": 75,
+      "t_mer": 17,
+      "avis": 3
+    },
+    {
+      "mois": "Sept.",
+      "t_moy": 14,
+      "pluie": 80,
+      "t_mer": 16,
+      "avis": 3
+    },
+    {
+      "mois": "Oct.",
+      "t_moy": 11,
+      "pluie": 90,
+      "t_mer": 14,
+      "avis": 2
+    },
+    {
+      "mois": "Nov.",
+      "t_moy": 7,
+      "pluie": 90,
+      "t_mer": 12,
+      "avis": 1
+    },
+    {
+      "mois": "Déc.",
+      "t_moy": 6,
+      "pluie": 90,
+      "t_mer": 10,
+      "avis": 1
+    }
+  ]
+}

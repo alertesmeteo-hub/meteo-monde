@@ -1,0 +1,129 @@
+{
+  "nom": "Écosse",
+  "slug": "ecosse",
+  "utc_offset_hours": 1,
+  "bbox": [
+    55.3,
+    -5.0,
+    58.0,
+    -2.2
+  ],
+  "villes": [
+    {
+      "nom": "Dundee",
+      "slug": "dundee",
+      "lat": 56.462,
+      "lon": -2.9707
+    },
+    {
+      "nom": "Édimbourg",
+      "slug": "edimbourg",
+      "lat": 55.9533,
+      "lon": -3.1883
+    },
+    {
+      "nom": "Glasgow",
+      "slug": "glasgow",
+      "lat": 55.8642,
+      "lon": -4.2518
+    },
+    {
+      "nom": "Inverness",
+      "slug": "inverness",
+      "lat": 57.4778,
+      "lon": -4.2247
+    },
+    {
+      "nom": "St Andrews",
+      "slug": "st-andrews",
+      "lat": 56.3398,
+      "lon": -2.7967
+    }
+  ],
+  "meilleurs_mois": [
+    {
+      "mois": "Jan.",
+      "t_moy": 4,
+      "pluie": 100,
+      "t_mer": 8,
+      "avis": 1
+    },
+    {
+      "mois": "Fév.",
+      "t_moy": 4,
+      "pluie": 75,
+      "t_mer": 8,
+      "avis": 1
+    },
+    {
+      "mois": "Mars",
+      "t_moy": 6,
+      "pluie": 70,
+      "t_mer": 8,
+      "avis": 1
+    },
+    {
+      "mois": "Avril",
+      "t_moy": 8,
+      "pluie": 60,
+      "t_mer": 9,
+      "avis": 2
+    },
+    {
+      "mois": "Mai",
+      "t_moy": 11,
+      "pluie": 65,
+      "t_mer": 11,
+      "avis": 2
+    },
+    {
+      "mois": "Juin",
+      "t_moy": 14,
+      "pluie": 70,
+      "t_mer": 13,
+      "avis": 3
+    },
+    {
+      "mois": "Juil.",
+      "t_moy": 15,
+      "pluie": 75,
+      "t_mer": 14,
+      "avis": 3
+    },
+    {
+      "mois": "Août",
+      "t_moy": 15,
+      "pluie": 85,
+      "t_mer": 15,
+      "avis": 3
+    },
+    {
+      "mois": "Sept.",
+      "t_moy": 13,
+      "pluie": 90,
+      "t_mer": 14,
+      "avis": 3
+    },
+    {
+      "mois": "Oct.",
+      "t_moy": 10,
+      "pluie": 110,
+      "t_mer": 12,
+      "avis": 1
+    },
+    {
+      "mois": "Nov.",
+      "t_moy": 6,
+      "pluie": 105,
+      "t_mer": 10,
+      "avis": 1
+    },
+    {
+      "mois": "Déc.",
+      "t_moy": 5,
+      "pluie": 105,
+      "t_mer": 9,
+      "avis": 1
+    }
+  ]
+}
