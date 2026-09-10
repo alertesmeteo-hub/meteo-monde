@@ -1,0 +1,40 @@
+{
+  "nom": "Autriche",
+  "slug": "autriche",
+  "utc_offset_hours": 2,
+  "bbox": [46.4, 9.5, 49.0, 17.2],
+  "villes": [
+    { "nom": "Vienne",       "slug": "vienne",       "lat": 48.2082, "lon": 16.3738 },
+    { "nom": "Graz",         "slug": "graz",         "lat": 47.0707, "lon": 15.4395 },
+    { "nom": "Linz",         "slug": "linz",         "lat": 48.3069, "lon": 14.2858 },
+    { "nom": "Salzbourg",    "slug": "salzbourg",    "lat": 47.8095, "lon": 13.0550 },
+    { "nom": "Innsbruck",    "slug": "innsbruck",    "lat": 47.2692, "lon": 11.4041 },
+    { "nom": "Klagenfurt",   "slug": "klagenfurt",   "lat": 46.6247, "lon": 14.3055 },
+    { "nom": "Villach",      "slug": "villach",      "lat": 46.6111, "lon": 13.8558 },
+    { "nom": "Wels",         "slug": "wels",         "lat": 48.1575, "lon": 14.0289 },
+    { "nom": "St. Pölten",   "slug": "st-poelten",   "lat": 48.2047, "lon": 15.6256 },
+    { "nom": "Dornbirn",     "slug": "dornbirn",     "lat": 47.4125, "lon": 9.7417 },
+    { "nom": "Bregenz",      "slug": "bregenz",      "lat": 47.5031, "lon": 9.7471 },
+    { "nom": "Eisenstadt",   "slug": "eisenstadt",   "lat": 47.8455, "lon": 16.5243 },
+    { "nom": "Kitzbühel",    "slug": "kitzbuhel",    "lat": 47.4467, "lon": 12.3925 },
+    { "nom": "Zell am See",  "slug": "zell-am-see",  "lat": 47.3239, "lon": 12.7958 },
+    { "nom": "Bad Ischl",    "slug": "bad-ischl",    "lat": 47.7113, "lon": 13.6222 },
+    { "nom": "Hallstatt",    "slug": "hallstatt",    "lat": 47.5622, "lon": 13.6493 },
+    { "nom": "Lienz",        "slug": "lienz",        "lat": 46.8291, "lon": 12.7683 },
+    { "nom": "Wörgl",        "slug": "worgl",        "lat": 47.4833, "lon": 12.0667 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": -1, "pluie": 50, "avis": 1 },
+    { "mois": "Fév.",  "t_moy": 1,  "pluie": 45, "avis": 1 },
+    { "mois": "Mars",  "t_moy": 5,  "pluie": 45, "avis": 2 },
+    { "mois": "Avril", "t_moy": 10, "pluie": 50, "avis": 3 },
+    { "mois": "Mai",   "t_moy": 15, "pluie": 70, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 18, "pluie": 85, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 20, "pluie": 90, "avis": 4 },
+    { "mois": "Août",  "t_moy": 19, "pluie": 85, "avis": 4 },
+    { "mois": "Sept.", "t_moy": 15, "pluie": 55, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 9,  "pluie": 50, "avis": 3 },
+    { "mois": "Nov.",  "t_moy": 4,  "pluie": 55, "avis": 1 },
+    { "mois": "Déc.",  "t_moy": 0,  "pluie": 55, "avis": 1 }
+  ]
+}
