@@ -1,0 +1,42 @@
+{
+  "nom": "États-Unis",
+  "slug": "etats-unis",
+  "utc_offset_hours": -5,
+  "bbox": [24.5, -125.0, 49.5, -66.9],
+  "villes": [
+    { "nom": "New York",      "slug": "new-york",      "lat": 40.7128, "lon": -74.0060 },
+    { "nom": "Los Angeles",   "slug": "los-angeles",   "lat": 34.0522, "lon": -118.2437 },
+    { "nom": "Chicago",       "slug": "chicago",       "lat": 41.8781, "lon": -87.6298 },
+    { "nom": "Houston",       "slug": "houston",       "lat": 29.7604, "lon": -95.3698 },
+    { "nom": "Phoenix",       "slug": "phoenix",       "lat": 33.4484, "lon": -112.0740 },
+    { "nom": "Philadelphie",  "slug": "philadelphie",  "lat": 39.9526, "lon": -75.1652 },
+    { "nom": "San Antonio",   "slug": "san-antonio",   "lat": 29.4241, "lon": -98.4936 },
+    { "nom": "San Diego",     "slug": "san-diego",     "lat": 32.7157, "lon": -117.1611 },
+    { "nom": "Dallas",        "slug": "dallas",        "lat": 32.7767, "lon": -96.7970 },
+    { "nom": "Austin",        "slug": "austin",        "lat": 30.2672, "lon": -97.7431 },
+    { "nom": "Miami",         "slug": "miami",         "lat": 25.7617, "lon": -80.1918 },
+    { "nom": "Seattle",       "slug": "seattle",       "lat": 47.6062, "lon": -122.3321 },
+    { "nom": "Denver",        "slug": "denver",        "lat": 39.7392, "lon": -104.9903 },
+    { "nom": "Boston",        "slug": "boston",        "lat": 42.3601, "lon": -71.0589 },
+    { "nom": "Las Vegas",     "slug": "las-vegas",     "lat": 36.1699, "lon": -115.1398 },
+    { "nom": "Washington",    "slug": "washington",    "lat": 38.9072, "lon": -77.0369 },
+    { "nom": "Atlanta",       "slug": "atlanta",       "lat": 33.7490, "lon": -84.3880 },
+    { "nom": "San Francisco", "slug": "san-francisco", "lat": 37.7749, "lon": -122.4194 },
+    { "nom": "La Nouvelle-Orléans", "slug": "la-nouvelle-orleans", "lat": 29.9511, "lon": -90.0715 },
+    { "nom": "Minneapolis",   "slug": "minneapolis",   "lat": 44.9778, "lon": -93.2650 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 4,  "pluie": 65, "avis": 2 },
+    { "mois": "Fév.",  "t_moy": 6,  "pluie": 60, "avis": 2 },
+    { "mois": "Mars",  "t_moy": 10, "pluie": 65, "avis": 3 },
+    { "mois": "Avril", "t_moy": 15, "pluie": 70, "avis": 4 },
+    { "mois": "Mai",   "t_moy": 20, "pluie": 80, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 24, "pluie": 85, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 27, "pluie": 90, "avis": 4 },
+    { "mois": "Août",  "t_moy": 26, "pluie": 85, "avis": 4 },
+    { "mois": "Sept.", "t_moy": 22, "pluie": 70, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 16, "pluie": 65, "avis": 4 },
+    { "mois": "Nov.",  "t_moy": 10, "pluie": 65, "avis": 3 },
+    { "mois": "Déc.",  "t_moy": 5,  "pluie": 65, "avis": 2 }
+  ]
+}
