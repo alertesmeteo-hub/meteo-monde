@@ -1,0 +1,38 @@
+{
+  "nom": "Brésil",
+  "slug": "bresil",
+  "utc_offset_hours": -3,
+  "bbox": [-33.75, -73.99, 5.27, -34.79],
+  "villes": [
+    { "nom": "São Paulo",        "slug": "sao-paulo",        "lat": -23.5505, "lon": -46.6333 },
+    { "nom": "Rio de Janeiro",   "slug": "rio-de-janeiro",   "lat": -22.9068, "lon": -43.1729 },
+    { "nom": "Brasília",         "slug": "brasilia",         "lat": -15.7939, "lon": -47.8828 },
+    { "nom": "Salvador",         "slug": "salvador",         "lat": -12.9777, "lon": -38.5016 },
+    { "nom": "Fortaleza",        "slug": "fortaleza",        "lat": -3.7319,  "lon": -38.5267 },
+    { "nom": "Belo Horizonte",   "slug": "belo-horizonte",   "lat": -19.9167, "lon": -43.9345 },
+    { "nom": "Manaus",           "slug": "manaus",           "lat": -3.1190,  "lon": -60.0217 },
+    { "nom": "Curitiba",         "slug": "curitiba",         "lat": -25.4284, "lon": -49.2733 },
+    { "nom": "Recife",           "slug": "recife",           "lat": -8.0476,  "lon": -34.8770 },
+    { "nom": "Porto Alegre",     "slug": "porto-alegre",     "lat": -30.0346, "lon": -51.2177 },
+    { "nom": "Belém",            "slug": "belem",            "lat": -1.4558,  "lon": -48.4902 },
+    { "nom": "Goiânia",          "slug": "goiania",          "lat": -16.6869, "lon": -49.2648 },
+    { "nom": "Florianópolis",    "slug": "florianopolis",    "lat": -27.5954, "lon": -48.5480 },
+    { "nom": "Natal",            "slug": "natal",            "lat": -5.7945,  "lon": -35.2110 },
+    { "nom": "Foz do Iguaçu",    "slug": "foz-do-iguacu",    "lat": -25.5478, "lon": -54.5882 },
+    { "nom": "Búzios",           "slug": "buzios",           "lat": -22.7469, "lon": -41.8817 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 26, "pluie": 220, "avis": 3 },
+    { "mois": "Fév.",  "t_moy": 26, "pluie": 200, "avis": 3 },
+    { "mois": "Mars",  "t_moy": 25, "pluie": 170, "avis": 3 },
+    { "mois": "Avril", "t_moy": 24, "pluie": 120, "avis": 4 },
+    { "mois": "Mai",   "t_moy": 22, "pluie": 80,  "avis": 4 },
+    { "mois": "Juin",  "t_moy": 21, "pluie": 50,  "avis": 5 },
+    { "mois": "Juil.", "t_moy": 20, "pluie": 40,  "avis": 5 },
+    { "mois": "Août",  "t_moy": 21, "pluie": 40,  "avis": 5 },
+    { "mois": "Sept.", "t_moy": 22, "pluie": 70,  "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 23, "pluie": 120, "avis": 4 },
+    { "mois": "Nov.",  "t_moy": 24, "pluie": 150, "avis": 3 },
+    { "mois": "Déc.",  "t_moy": 25, "pluie": 200, "avis": 3 }
+  ]
+}

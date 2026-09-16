@@ -1,0 +1,38 @@
+{
+  "nom": "Mexique",
+  "slug": "mexique",
+  "utc_offset_hours": -6,
+  "bbox": [14.53, -118.4, 32.72, -86.71],
+  "villes": [
+    { "nom": "Mexico",              "slug": "mexico",               "lat": 19.4326, "lon": -99.1332 },
+    { "nom": "Guadalajara",         "slug": "guadalajara",          "lat": 20.6597, "lon": -103.3496 },
+    { "nom": "Monterrey",           "slug": "monterrey",            "lat": 25.6866, "lon": -100.3161 },
+    { "nom": "Puebla",              "slug": "puebla",                "lat": 19.0414, "lon": -98.2063 },
+    { "nom": "Cancún",              "slug": "cancun",                "lat": 21.1619, "lon": -86.8515 },
+    { "nom": "Tijuana",             "slug": "tijuana",               "lat": 32.5149, "lon": -117.0382 },
+    { "nom": "Mérida",              "slug": "merida",                "lat": 20.9674, "lon": -89.5926 },
+    { "nom": "Playa del Carmen",    "slug": "playa-del-carmen",      "lat": 20.6296, "lon": -87.0739 },
+    { "nom": "Oaxaca",              "slug": "oaxaca",                "lat": 17.0732, "lon": -96.7266 },
+    { "nom": "Puerto Vallarta",     "slug": "puerto-vallarta",       "lat": 20.6534, "lon": -105.2253 },
+    { "nom": "Acapulco",            "slug": "acapulco",              "lat": 16.8531, "lon": -99.8237 },
+    { "nom": "Guanajuato",          "slug": "guanajuato",            "lat": 21.0190, "lon": -101.2574 },
+    { "nom": "San Miguel de Allende", "slug": "san-miguel-de-allende", "lat": 20.9145, "lon": -100.7444 },
+    { "nom": "Chihuahua",           "slug": "chihuahua",             "lat": 28.6353, "lon": -106.0889 },
+    { "nom": "Veracruz",            "slug": "veracruz",              "lat": 19.1738, "lon": -96.1342 },
+    { "nom": "Los Cabos",           "slug": "los-cabos",             "lat": 22.8905, "lon": -109.9167 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 16, "pluie": 10, "avis": 5 },
+    { "mois": "Fév.",  "t_moy": 17, "pluie": 8,  "avis": 5 },
+    { "mois": "Mars",  "t_moy": 19, "pluie": 10, "avis": 5 },
+    { "mois": "Avril", "t_moy": 21, "pluie": 20, "avis": 4 },
+    { "mois": "Mai",   "t_moy": 22, "pluie": 55, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 21, "pluie": 130, "avis": 3 },
+    { "mois": "Juil.", "t_moy": 20, "pluie": 150, "avis": 3 },
+    { "mois": "Août",  "t_moy": 20, "pluie": 140, "avis": 3 },
+    { "mois": "Sept.", "t_moy": 20, "pluie": 150, "avis": 3 },
+    { "mois": "Oct.",  "t_moy": 19, "pluie": 70,  "avis": 4 },
+    { "mois": "Nov.",  "t_moy": 17, "pluie": 15,  "avis": 5 },
+    { "mois": "Déc.",  "t_moy": 16, "pluie": 8,   "avis": 5 }
+  ]
+}

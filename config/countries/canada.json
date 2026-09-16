@@ -1,0 +1,38 @@
+{
+  "nom": "Canada",
+  "slug": "canada",
+  "utc_offset_hours": -5,
+  "bbox": [41.68, -141.0, 70.0, -52.6],
+  "villes": [
+    { "nom": "Toronto",         "slug": "toronto",          "lat": 43.6532, "lon": -79.3832 },
+    { "nom": "Montréal",        "slug": "montreal",         "lat": 45.5019, "lon": -73.5674 },
+    { "nom": "Vancouver",       "slug": "vancouver",        "lat": 49.2827, "lon": -123.1207 },
+    { "nom": "Calgary",         "slug": "calgary",          "lat": 51.0447, "lon": -114.0719 },
+    { "nom": "Ottawa",          "slug": "ottawa",           "lat": 45.4215, "lon": -75.6972 },
+    { "nom": "Edmonton",        "slug": "edmonton",         "lat": 53.5461, "lon": -113.4938 },
+    { "nom": "Québec",          "slug": "quebec",           "lat": 46.8139, "lon": -71.2080 },
+    { "nom": "Winnipeg",        "slug": "winnipeg",         "lat": 49.8951, "lon": -97.1384 },
+    { "nom": "Halifax",         "slug": "halifax",          "lat": 44.6488, "lon": -63.5752 },
+    { "nom": "Victoria",        "slug": "victoria",         "lat": 48.4284, "lon": -123.3656 },
+    { "nom": "Whistler",        "slug": "whistler",         "lat": 50.1163, "lon": -122.9574 },
+    { "nom": "Banff",           "slug": "banff",            "lat": 51.1784, "lon": -115.5708 },
+    { "nom": "Niagara Falls",   "slug": "niagara-falls",    "lat": 43.0896, "lon": -79.0849 },
+    { "nom": "St. John's",      "slug": "st-johns",         "lat": 47.5615, "lon": -52.7126 },
+    { "nom": "Saskatoon",       "slug": "saskatoon",        "lat": 52.1332, "lon": -106.6700 },
+    { "nom": "Regina",          "slug": "regina",           "lat": 50.4452, "lon": -104.6189 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": -8,  "pluie": 55, "avis": 1 },
+    { "mois": "Fév.",  "t_moy": -6,  "pluie": 50, "avis": 1 },
+    { "mois": "Mars",  "t_moy": -1,  "pluie": 55, "avis": 2 },
+    { "mois": "Avril", "t_moy": 6,   "pluie": 65, "avis": 3 },
+    { "mois": "Mai",   "t_moy": 13,  "pluie": 75, "avis": 4 },
+    { "mois": "Juin",  "t_moy": 18,  "pluie": 80, "avis": 4 },
+    { "mois": "Juil.", "t_moy": 21,  "pluie": 85, "avis": 5 },
+    { "mois": "Août",  "t_moy": 20,  "pluie": 80, "avis": 5 },
+    { "mois": "Sept.", "t_moy": 15,  "pluie": 75, "avis": 4 },
+    { "mois": "Oct.",  "t_moy": 9,   "pluie": 70, "avis": 3 },
+    { "mois": "Nov.",  "t_moy": 2,   "pluie": 65, "avis": 2 },
+    { "mois": "Déc.",  "t_moy": -5,  "pluie": 60, "avis": 1 }
+  ]
+}

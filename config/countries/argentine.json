@@ -1,0 +1,36 @@
+{
+  "nom": "Argentine",
+  "slug": "argentine",
+  "utc_offset_hours": -3,
+  "bbox": [-55.05, -73.56, -21.78, -53.63],
+  "villes": [
+    { "nom": "Buenos Aires",     "slug": "buenos-aires",     "lat": -34.6037, "lon": -58.3816 },
+    { "nom": "Córdoba",          "slug": "cordoba",          "lat": -31.4201, "lon": -64.1888 },
+    { "nom": "Rosario",          "slug": "rosario",          "lat": -32.9468, "lon": -60.6393 },
+    { "nom": "Mendoza",          "slug": "mendoza",          "lat": -32.8908, "lon": -68.8272 },
+    { "nom": "Salta",            "slug": "salta",            "lat": -24.7859, "lon": -65.4117 },
+    { "nom": "San Miguel de Tucumán", "slug": "san-miguel-de-tucuman", "lat": -26.8083, "lon": -65.2176 },
+    { "nom": "Mar del Plata",    "slug": "mar-del-plata",    "lat": -38.0055, "lon": -57.5426 },
+    { "nom": "Bariloche",        "slug": "bariloche",        "lat": -41.1335, "lon": -71.3103 },
+    { "nom": "Ushuaia",          "slug": "ushuaia",          "lat": -54.8019, "lon": -68.3030 },
+    { "nom": "Puerto Iguazú",    "slug": "puerto-iguazu",    "lat": -25.5972, "lon": -54.5736 },
+    { "nom": "El Calafate",      "slug": "el-calafate",      "lat": -50.3379, "lon": -72.2648 },
+    { "nom": "La Plata",         "slug": "la-plata",         "lat": -34.9215, "lon": -57.9545 },
+    { "nom": "Neuquén",          "slug": "neuquen",          "lat": -38.9516, "lon": -68.0591 },
+    { "nom": "Santa Fe",         "slug": "santa-fe",         "lat": -31.6333, "lon": -60.7000 }
+  ],
+  "meilleurs_mois": [
+    { "mois": "Jan.",  "t_moy": 24, "pluie": 110, "avis": 4 },
+    { "mois": "Fév.",  "t_moy": 23, "pluie": 100, "avis": 4 },
+    { "mois": "Mars",  "t_moy": 21, "pluie": 110, "avis": 4 },
+    { "mois": "Avril", "t_moy": 17, "pluie": 90,  "avis": 4 },
+    { "mois": "Mai",   "t_moy": 13, "pluie": 60,  "avis": 3 },
+    { "mois": "Juin",  "t_moy": 10, "pluie": 50,  "avis": 2 },
+    { "mois": "Juil.", "t_moy": 10, "pluie": 45,  "avis": 2 },
+    { "mois": "Août",  "t_moy": 11, "pluie": 50,  "avis": 2 },
+    { "mois": "Sept.", "t_moy": 13, "pluie": 60,  "avis": 3 },
+    { "mois": "Oct.",  "t_moy": 17, "pluie": 90,  "avis": 4 },
+    { "mois": "Nov.",  "t_moy": 20, "pluie": 90,  "avis": 4 },
+    { "mois": "Déc.",  "t_moy": 23, "pluie": 100, "avis": 4 }
+  ]
+}
